@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\bin\Debug\OpenXMLPlayground_prjct.exe.config
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\bin\Debug\OpenXMLPlayground_prjct.exe
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\bin\Debug\OpenXMLPlayground_prjct.pdb
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\bin\Debug\System.IO.Packaging.dll
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\bin\Debug\System.IO.Packaging.xml
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\obj\Debug\OpenXMLPlayground_prjct.csprojAssemblyReference.cache
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\obj\Debug\OpenXMLPlayground_prjct.Main.resources
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\obj\Debug\OpenXMLPlayground_prjct.Properties.Resources.resources
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\obj\Debug\OpenXMLPlayground_prjct.csproj.GenerateResource.cache
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\obj\Debug\OpenXMLPlayground_prjct.csproj.CopyComplete
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\obj\Debug\OpenXMLPlayground_prjct.exe
+C:\Users\user\Desktop\OpenXMLPlayground_slctn\OpenXMLPlayground_prjct\obj\Debug\OpenXMLPlayground_prjct.pdb
