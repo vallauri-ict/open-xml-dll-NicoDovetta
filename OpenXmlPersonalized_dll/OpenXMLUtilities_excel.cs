@@ -10,6 +10,7 @@ using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 using X14 = DocumentFormat.OpenXml.Office2010.Excel;
 using X15 = DocumentFormat.OpenXml.Office2013.Excel;
+
 namespace OpenXmlPersonalized_dll
 {
     public class TestModel
@@ -27,7 +28,7 @@ namespace OpenXmlPersonalized_dll
 
     class OpenXMLUtilities_excel
     {
-        public static void createTestDocument()
+        public static void createDocument()
         {
             TestModelList tmList = new TestModelList();
             tmList.testData = new List<TestModel>();
