@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnCreateTestWordDocument = new System.Windows.Forms.Button();
+            this.btnExcel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCreateTestWordDocument
@@ -41,13 +42,24 @@
             this.btnCreateTestWordDocument.UseVisualStyleBackColor = true;
             this.btnCreateTestWordDocument.Click += new System.EventHandler(this.btnCreateTestWordDocument_Click);
             // 
-            // main
+            // btnExcel
+            // 
+            this.btnExcel.Location = new System.Drawing.Point(12, 62);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(143, 41);
+            this.btnExcel.TabIndex = 1;
+            this.btnExcel.Text = "Create Excel test document";
+            this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 115);
+            this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.btnCreateTestWordDocument);
-            this.Name = "main";
+            this.Name = "Main";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCreateTestWordDocument;
+        private System.Windows.Forms.Button btnExcel;
     }
 }
 
