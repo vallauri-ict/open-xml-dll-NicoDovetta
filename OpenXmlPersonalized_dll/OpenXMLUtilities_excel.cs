@@ -26,7 +26,7 @@ namespace OpenXmlPersonalized_dll
         public List<TestModel> testData { get; set; }
     }
 
-    public class OpenXMLUtilities_excel
+    class OpenXMLUtilities_excel
     {
         public static void createDocument()
         {
