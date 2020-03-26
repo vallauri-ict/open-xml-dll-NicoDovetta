@@ -8,8 +8,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 using System.Diagnostics;
+
+//DLL creata
+using OpenXmlPersonalized_dll;
 
 //Da libreria OpenXML
 using DocumentFormat.OpenXml;
@@ -27,11 +31,12 @@ namespace OpenXMLPlayground_prjct
             InitializeComponent();
         }
 
+        #region Word
         private void btnCreateTestWordDocument_Click(object sender, EventArgs e)
         {
             try
             {
-                string filepath = "test.docx";
+                string filepath = OpenXMLUtilities_common.createPath("docx");
                 string msg = "Hello, World!";
 
                 using (WordprocessingDocument doc = WordprocessingDocument.Create(filepath, WordprocessingDocumentType.Document))
@@ -63,6 +68,7 @@ namespace OpenXMLPlayground_prjct
                     body.Append(myTable);  //Con le tabelle bisogna fare append perchè non è un oggetto singolo
 
                     //Open file
+                    MessageBox.Show("File creato correttamente");
                     Process.Start(filepath);
                 }
             }
@@ -265,5 +271,44 @@ namespace OpenXMLPlayground_prjct
             TableProperties tblProps = new TableProperties();
             return tblProps;
         }
+
+        #endregion Word
+
+        #region Excel
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            string completePath = OpenXMLUtilities_common.createPath("xlsx");
+            TestModelList item = new TestModelList();
+            item.testData = new List<TestModel>();
+            datiProva(item);
+
+            try
+            {
+                using (SpreadsheetDocument package = SpreadsheetDocument.Create(completePath, SpreadsheetDocumentType.Workbook))
+                {
+                    OpenXMLUtilities_excel.CreatePartsForExcel(package, item);
+                    MessageBox.Show("File creato correttamente.");
+                    Process.Start(completePath);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Problemi con la creazione del file. Chiuderlo e riprovare o riavviare l'applicazione.");
+            }
+        }
+
+        private void datiProva(TestModelList list)
+        {
+            for (int i = 0, y = 0; i < 4; i++, y--)
+            {
+                TestModel tm = new TestModel();
+                tm.TestId = i + 1;
+                tm.TestName = $"Test{i + 1}";
+                tm.TestDesc = $"Tested {i + 1} time";
+                tm.TestDate = DateTime.Now.AddDays(y);
+                list.testData.Add(tm);
+            }
+        }
+        #endregion Excel
     }
 }
