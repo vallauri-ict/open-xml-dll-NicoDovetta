@@ -149,12 +149,12 @@ coverage*[.json, .xml, .info]
 *.coveragexml
 
 # NCrunch
-NCrunch*
-.crunch.local.xml
+_NCrunch_*
+.*crunch*.local.xml
 nCrunchTemp_*
 
 # MightyMoose
-.mm.
+*.mm.*
 AutoTest.Net/
 
 # Web workbench (sass)
@@ -194,7 +194,7 @@ PublishScripts/
 # NuGet Symbol Packages
 *.snupkg
 # The packages folder can be ignored because of Package Restore
-*/[Pp]ackages/
+**/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
@@ -266,7 +266,7 @@ ServiceFabricBackup/
 # Business Intelligence projects
 *.rdl.data
 *.bim.layout
-.bim_.settings
+*.bim_*.settings
 *.rptproj.rsuser
 *- [Bb]ackup.rdl
 *- [Bb]ackup ([0-9]).rdl
@@ -292,11 +292,11 @@ node_modules/
 *.vbw
 
 # Visual Studio LightSwitch build output
-*/.HTMLClient/GeneratedArtifacts
-*/.DesktopClient/GeneratedArtifacts
-*/.DesktopClient/ModelManifest.xml
-*/.Server/GeneratedArtifacts
-*/.Server/ModelManifest.xml
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
 _Pvt_Extensions
 
 # Paket dependency manager
@@ -310,7 +310,7 @@ paket-files/
 .cr/personal
 
 # Python Tools for Visual Studio (PTVS)
-_pycache_/
+__pycache__/
 *.pyc
 
 # Cake - Uncomment if you are using it
